@@ -1,0 +1,23 @@
+.card-product {
+  width: 211px;
+  height: 211px;
+  box-shadow: 1px 1px 4px 0 #D5D5D6;
+  border-radius: 5px;
+  margin-bottom: 32px;
+  .card-image {
+    background-position: center;
+    background-size: cover;
+    height: 157px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .card-body {
+    height: 68px;
+    background-color: $white;
+    padding: 10px;
+    font-weight: $font-weight-bold;
+    color: $danger;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}

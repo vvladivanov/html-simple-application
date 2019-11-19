@@ -1,0 +1,17 @@
+.products {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  .card-product {
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  @include media-breakpoint-down('xs') {
+    .card-product {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

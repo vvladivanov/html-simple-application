@@ -1,0 +1,111 @@
+.section-column {
+  background-color: $white;
+  display: flex;
+
+  @include media-breakpoint-down('md') {
+    flex-direction: column;
+  }
+  &.column-reverse {
+    @include media-breakpoint-down('md') {
+      flex-wrap: wrap-reverse;
+    }
+    .column-block-item {
+      .info {
+        @include media-breakpoint-up('lg') {
+          width: 404px;
+          margin-right: 50px;
+          margin-left: auto;
+        }
+  
+        @include media-breakpoint-up('xl') {
+          margin-left: auto;
+          margin-right: 170px;
+          max-width: 404px;
+        }
+  
+        @include media-breakpoint-down('md') {
+          max-width: map-get($container-max-widths, 'md');
+          margin: 53px auto 42px;
+          padding: 0 $container-gutter-width;
+        }
+  
+        @include media-breakpoint-down('sm') {
+          max-width: map-get($container-max-widths, 'sm');
+        }
+      }
+      .featured-image {
+        @include media-breakpoint-up('lg') {
+          height: 100%;
+          min-height: 315px;
+        }
+  
+        @include media-breakpoint-down('md') {
+          height: 100%;
+          min-height: 315px;
+        }
+      }
+    }
+  }
+  .column-block-item {
+    display: flex;
+    align-items: center;
+    @include media-breakpoint-up('lg') {
+      flex: 1;
+    }
+
+    @include media-breakpoint-down('md') {
+      width: 100%;
+    }
+
+    .info {
+      @include media-breakpoint-up('lg') {
+        margin-left: 80px;
+        width: 400px;
+      }
+
+      @include media-breakpoint-up('xl') {
+        margin-left: 114px;
+        width: 487px;
+      }
+
+      @include media-breakpoint-down('md') {
+        max-width: map-get($container-max-widths, 'md');
+        margin: 53px auto 42px;
+        padding: 0 $container-gutter-width;
+      }
+
+      @include media-breakpoint-down('sm') {
+        max-width: map-get($container-max-widths, 'sm');
+      }
+
+      .title {
+        font-weight: $font-weight-bolder;
+        max-width: 380px;
+      }
+
+      .content {
+        font-size: 16px;
+      }
+    }
+
+    .featured-image {
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      @include media-breakpoint-up('lg') {
+        height: 100%;
+        min-height: 252px;
+      }
+
+      @include media-breakpoint-down('md') {
+        height: 100%;
+        min-height: 252px;
+      }
+
+      @include media-breakpoint-down('sm') {
+        min-height: 0;
+        padding-bottom: 65%;
+      }
+    }
+  }
+}

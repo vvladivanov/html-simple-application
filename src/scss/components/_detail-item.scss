@@ -1,0 +1,15 @@
+.detail-item {
+  padding: 10px 5px;
+  border-bottom: 1px solid $gray-300;
+  .title {
+    font-weight: $font-weight-bold;
+    margin-right: 10px;
+    white-space: pre-wrap;
+  }
+  .price {
+    font-size: 20px;
+    font-weight: $font-weight-bold;
+    margin-right: 5px;
+  }
+
+}
